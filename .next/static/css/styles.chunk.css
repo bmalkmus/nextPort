@@ -1,0 +1,39 @@
+
+.section{
+    height:100vh;
+    width:100%;
+}
+
+.logoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/static/seattleNight.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 60%;
+}
+
+#brand {
+height: 50%;
+width: 50%;
+}
+
+.links{
+    margin-top: 0;
+    height: 40%;
+    background-color: #07648D;
+
+}
+.links ul {
+    list-style-type: none;
+    margin-top:0px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9fTl9FLy4vcGFnZXMvc3R5bGUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFDQTtJQUNJLGFBQWE7SUFDYixXQUFXO0NBQ2Q7O0FBRUQ7SUFDSSxjQUFjO0lBQ2QsdUJBQXVCO0lBQ3ZCLG9CQUFvQjtJQUNwQix3QkFBd0I7SUFDeEIsa0RBQWtEO0lBQ2xELDZCQUE2QjtJQUM3Qix1QkFBdUI7SUFDdkIsWUFBWTtJQUNaLFlBQVk7Q0FDZjs7QUFFRDtBQUNBLFlBQVk7QUFDWixXQUFXO0NBQ1Y7O0FBRUQ7SUFDSSxjQUFjO0lBQ2QsWUFBWTtJQUNaLDBCQUEwQjs7Q0FFN0I7QUFDRDtJQUNJLHNCQUFzQjtJQUN0QixlQUFlO0lBQ2YsY0FBYztJQUNkLHVCQUF1QjtJQUN2QixzQkFBc0I7SUFDdEIsd0JBQXdCIiwiZmlsZSI6InN0YXRpYy9jc3Mvc3R5bGVzLmNodW5rLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG4uc2VjdGlvbntcclxuICAgIGhlaWdodDoxMDB2aDtcclxuICAgIHdpZHRoOjEwMCU7XHJcbn1cclxuXHJcbi5sb2dvQ29udGFpbmVye1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoXCIvc3RhdGljL3NlYXR0bGVOaWdodC5qcGdcIik7XHJcbiAgICBiYWNrZ3JvdW5kLWF0dGFjaG1lbnQ6IGZpeGVkO1xyXG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgaGVpZ2h0OiA2MCU7XHJcbn1cclxuXHJcbiNicmFuZCB7XHJcbmhlaWdodDogNTAlO1xyXG53aWR0aDogNTAlO1xyXG59XHJcblxyXG4ubGlua3N7XHJcbiAgICBtYXJnaW4tdG9wOiAwO1xyXG4gICAgaGVpZ2h0OiA0MCU7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDc2NDhEO1xyXG5cclxufVxyXG4ubGlua3MgdWwge1xyXG4gICAgbGlzdC1zdHlsZS10eXBlOiBub25lO1xyXG4gICAgbWFyZ2luLXRvcDowcHg7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgIGFsaWduLWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG59Il0sInNvdXJjZVJvb3QiOiIifQ==*/
