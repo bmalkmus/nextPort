@@ -18,6 +18,10 @@
     background-repeat: no-repeat;
 }
 
+.logoContainer span {
+    display: none;
+}
+
 #brand {
     height: 65%;
     width: 55%;
@@ -59,14 +63,26 @@
     display: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 675px) {
     .logoContainer{
         background-image: none;
         height: 50%;
         width: 50%;
         float: left;
-        align-items: flex-start;
-        justify-content: left;
+        align-content: flex-start;
+    }
+    .logoContainer span{
+        display: inherit;
+        color: white;
+        font-size: 50px;
+        text-align: center;
+
+    }
+
+    #brand{
+        height:272px;
+        width: 246px;
+        padding-top: 0px
     }
     .landing{
         background-image: url("/static/NavbarLandingNoSlogan.png");
@@ -80,6 +96,11 @@
         width: 50%;
         height: 50%;
     }
+    .linkContainers {
+        height: 50px;
+        width: 100%;
+        margin-top: 3px;
+    }
 
     .sloganContainer{
         display: inherit;
@@ -87,20 +108,22 @@
         clear: both;
         height: 50%;
         text-align: center;
-        /* display: flex;
+        display: flex;
         align-items: flex-end;
-        justify-content: flex-end; */
-        
+        justify-content: flex-end;
     }
 
-    .transparentContainter{
+    .sloganContainer div{
         background-color: white;
-        height: 100%;
-        width: 100%;
+        width:45%;
     }
 
     .sloganContainer p{
         color: rgba(0, 0, 0, 0.5);
+        font-family: 'Lobster', cursive;
+        background-image: url("/static/NavbarLandingNoSlogan.png");
+        background-attachment: fixed;
+        background-position: right 400px;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         background-clip: text;

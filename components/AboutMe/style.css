@@ -1,0 +1,21 @@
+.imgDesk{
+    display:none;
+}
+.imgPhone{
+    border-radius: 35%;
+    height: 100%;
+    width: 100%;
+}
+.Part-AboutMe{
+    height: 100vh;
+    text-align: center;
+    background-color: black;
+    
+}
+#abtContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
