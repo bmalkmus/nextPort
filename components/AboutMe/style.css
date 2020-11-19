@@ -1,10 +1,18 @@
+
+/* ########## Mobile ########## */
 .imgDesk{
     display:none;
+}
+
+#imgContainer{
+    width:40%;
+    height: 25%;
 }
 .imgPhone{
     border-radius: 35%;
     height: 100%;
     width: 100%;
+    box-shadow: 7px 7px 7px grey;
 }
 .Part-AboutMe{
     height: 100vh;
@@ -12,10 +20,49 @@
     background-color: black;
     
 }
+.Part-AboutMe h2 {
+    color: #07648D;
+    text-shadow: 1px 1px 1px white;
+}
+
 #abtContent{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+}
+
+.paragraphContainer{
+    color: white;
+    width: 90%;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+}
+
+/* ############## Desktop ################ */
+@media screen and (min-width: 675px) {
+    #abtContent {
+        flex-direction: row;
+    }
+    .paragraphContainer, #imgContainer{
+        width: 50%;
+    }
+    .imgPhone{
+        display: none;
+    }
+    /* .imgDesk{
+        display: initial;
+    } */
+    #imgContainer{
+        background-color: azure;
+    }
+    .paragraphContainer p{
+        font-size: 25px;
+        padding: 10px;
+    }
+
 }
 

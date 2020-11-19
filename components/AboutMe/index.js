@@ -6,14 +6,15 @@ function AboutMe(){
         <div className="Part-AboutMe">
             <br/>
             <br/>
-            <br/>
             <h2>About Me</h2>
             <div id="abtContent">
                 <div id="imgContainer">
                     <img className="imgPhone" alt="thumbnail image" src="/static/ProfileThumb.png"/>
                     <img className="imgDesk" alt="desktop image" src="/static/ProfileDesktop.png"/>
                 </div>
-                <div className="paragraphCotnainer">
+                <br/>
+                <br/>
+                <div className="paragraphContainer">
                     <p>
                         My name is Benjamin Malkmus and I am a web developer. 
                         I’m based out of Bellevue, WA and have lived in the surrounding Seattle area in 2016. 
