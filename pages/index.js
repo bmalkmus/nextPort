@@ -1,5 +1,6 @@
 import './style.css'
-import AboutMe from "../components/AboutMe"
+import AboutMe from "../components/AboutMe";
+import Projects from "../components/Projects";
 
 function Portfolio (){
     return (
@@ -47,7 +48,8 @@ function Portfolio (){
                             </div>
                         </div>     
                 </div>
-                <AboutMe/> 
+                <AboutMe/>
+                <Projects/>
             </body>
             
         </div>
