@@ -12,7 +12,7 @@ function Portfolio (){
                     Malkmus Solutions
                 </title>
             </header>
-                <div className="landing">
+                <div className="landing" id="homePage">
 
                         <div className="logoContainer">
                             <img id = "brand" src ="/static/MalkmusSolutionsOpacity0.png" alt="logo"/>

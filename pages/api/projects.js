@@ -3,7 +3,7 @@ const projects = [
         name: "iDriveWashington",
         deployed:"https://idrivewashington.azurewebsites.net/",
         repo: "https://github.com/bmalkmus/iDriveWash",
-        imgPath: `${process.env.PUBLIC_URL}/images/iDriveWash.png`,
+        imgPath: `/static/iDriveWash.png`,
         technologies: "MERN Stack, Google Maps API, WSDOT API, Azure Web Services",
         description: "This app is a re-design of Washington Department of Transportation's website to give a more user friendly approach to need to know information."
     },
@@ -11,7 +11,7 @@ const projects = [
         name: "Bootleg Cooking",
         deployed:"https://bootleg-cooking.herokuapp.com/",
         repo: "https://github.com/rnyang-16/Project_2",
-        imgPath: `${process.env.PUBLIC_URL}/images/main.png`,
+        imgPath: `/static/main.png`,
         technologies: "jQuery, Sequelize, SQL database, javascript, Node.js, Travis CL, Handlebars npm",
         description: "Our app, Bootleg Cooking, is designed to help our users find a new recipe to try for a meal using ingredients the user already has in their household."
     },
@@ -19,7 +19,7 @@ const projects = [
         name: "RealDeals",
         deployed:"https://real--deals.herokuapp.com/",
         repo: "https://github.com/bmalkmus/project3",
-        imgPath: `${process.env.PUBLIC_URL}/images/Search.png`,
+        imgPath: `/static/Search.png`,
         technologies: "MySQL, Express.js, React.js, Node.js",
         description: "Our app, Real Deals, is designed to help our users to search multiple website platforms to find the cheapest price."
     },
@@ -27,7 +27,7 @@ const projects = [
         name: "Park & Dinner",
         deployed:"https://github.com/bmalkmus/getOutsideApp",
         repo: "https://bmalkmus.github.io/getOutsideApp/",
-        imgPath: `${process.env.PUBLIC_URL}/images/ParkApp.png`,
+        imgPath: `/static/ParkApp.png`,
         technologies: "Javascript, HTML5, Materialize CSS, CSS",
         description: "Using third party API's, this website allows you to search for parks around you in Seattle along with 5 closest restaurants to that park's location."
     },
@@ -35,7 +35,7 @@ const projects = [
         name: "Workday Planner",
         deployed:"https://bmalkmus.github.io/dailyPlanner/",
         repo: "https://github.com/bmalkmus/dailyPlanner",
-        imgPath: `${process.env.PUBLIC_URL}/images/WorkdayPlan.png`,
+        imgPath: `/static/WorkdayPlan.png`,
         technologies: "jQuery, HTML, CSS, localStorage, Moment.js library",
         description: "Here is a daily planner that assists you in your day with color changing input boxes for future, present, and past timeblocks."
     },
@@ -43,7 +43,7 @@ const projects = [
         name: "React Google Books Search",
         deployed:"https://book-react-google.herokuapp.com/",
         repo: "https://github.com/bmalkmus/GoogleBookSearch",
-        imgPath: `${process.env.PUBLIC_URL}/images/GoogleBook.png`,
+        imgPath: `/static/GoogleBook.png`,
         technologies: "MongoDB, Express.js, React.js, Node.js",
         description: "Google Books API search using MERN techniques"
     },
@@ -51,7 +51,7 @@ const projects = [
         name: "Weather App",
         deployed:"https://bmalkmus.github.io/WeatherApp/",
         repo: "https://github.com/bmalkmus/WeatherApp",
-        imgPath: `${process.env.PUBLIC_URL}/images/WeatherApp.png`,
+        imgPath: `/static/WeatherApp.png`,
         technologies: "jQuery, HTML, OpenWeather API, CSS, Bootstrap",
         description: "Searchable city weather forecast."
     },
@@ -59,7 +59,7 @@ const projects = [
         name: "Eat Da Burger",
         deployed:"https://burger23eater.herokuapp.com/",
         repo: "https://github.com/bmalkmus/burger",
-        imgPath: `${process.env.PUBLIC_URL}/images/Burger_App.png`,
+        imgPath: `/static/Burger_App.png`,
         technologies: "Heroku, Handlebars, MVC architectural pattern, Node.js, Javascript",
         description: "Here is a creation of an interactive burger devouring application that is deployed to Heroku."
     },
@@ -67,7 +67,7 @@ const projects = [
         name: "Coding Quiz",
         deployed:"https://bmalkmus.github.io/codingQuiz/",
         repo: "https://github.com/bmalkmus/codingQuiz",
-        imgPath: `${process.env.PUBLIC_URL}/images/Quiz.png`,
+        imgPath: `/static/Quiz.png`,
         technologies: "HTML, Javascript, CSS",
         description: "Class project to create a small little quiz."
     },
