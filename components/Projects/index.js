@@ -1,10 +1,16 @@
 import React from 'react';
+import useSwr from 'swr';
 import "./style.css";
 
+const fetcher = (url) => fetch(url).then((res) => res.json())
 
-function Projects({projects}){
+function Projects(){
 
-    console.log(projects);
+const { data, error } = useSwr('/api/projects', fetcher)
+if (error) return <div>Failed to load users</div>
+if (!data) return <div>Loading...</div>
+
+  console.log(data)
 
 
     return (
@@ -14,10 +20,5 @@ function Projects({projects}){
     )
 }
 
-Projects.getInitialProps = async (ctx) => {
-    const res = await fetch('/data/projects')
-    const json = await res.json()
-    return { projects: json }
-  }
 
 export default Projects

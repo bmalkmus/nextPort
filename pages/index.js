@@ -12,7 +12,6 @@ function Portfolio (){
                     Malkmus Solutions
                 </title>
             </header>
-            <body>
                 <div className="landing">
 
                         <div className="logoContainer">
@@ -50,7 +49,6 @@ function Portfolio (){
                 </div>
                 <AboutMe/>
                 <Projects/>
-            </body>
             
         </div>
     )
