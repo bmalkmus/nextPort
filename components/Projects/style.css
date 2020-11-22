@@ -46,31 +46,15 @@
 /* ############## SLIDES ##########################*/
 .each-slide > div {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    height: 100%;
-    background-color: rgb(148,0,0);
+    justify-content: center;
+    background-size: cover;
+    height: 350px;
   }
-  
-  .each-slide > img {
-    height: 300px;
-    width: 75%;
-  }
-  
-  .each-slide{
-    background-color: rgb(148,0,0);
-  }
-  
-  
   
   .each-slide span {
     padding: 20px;
     font-size: 20px;
+    background: #efefef;
     text-align: center;
-    color:whitesmoke;
-  }
-  
-  .active{
-    background-color: rgb(148,0,0);
   }
