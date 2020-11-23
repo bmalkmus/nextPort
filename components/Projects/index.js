@@ -1,7 +1,7 @@
 import React from 'react';
 import useSwr from 'swr';
-import { Slide } from 'react-slideshow-image';
-import 'react-slideshow-image/dist/styles.css';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 import "./style.css";
 
 const fetcher = (url) => fetch(url).then((res) => res.json())
@@ -34,21 +34,20 @@ if (!data) return <div>Loading...</div>
                 )
             })}
             <div className="slideContainer">
-                <Slide easing="ease">
-                    {[...data].map(project => {
-                        console.log(project)
-                        const keyName2 = project.name+2;
-                        return (
-                            <div key={keyName2} className="eachSlide">
-                                <div className="each-slide">
-                                    <div style={{'backgroundImage': `url("/static/Burger_App.png")`}}>
-                                        <span>Slide 1</span>
-                                    </div>
+                <Carousel>
+                    {[...data].map(project=>{
+                        const key = project.name+2
+                        return(
+                            <div key={key}>
+                                <p className="slideTitle">{project.name}</p>
+                                <img src={project.imgPath}/>
+                                <div>
+                                    <p>{project.description}</p>
                                 </div>
                             </div>
                         )
                     })}
-                </Slide>
+                </Carousel>
             </div>
             
 
