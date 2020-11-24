@@ -44,6 +44,46 @@
     }
 }
 /* ############## SLIDES ##########################*/
-.slideTitle{
+.slideContainer{
+    background-color: black;
+}
+.slideTitle, .descriptionContainer{
     color: white;
 }
+
+.thumbs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.slideContent{
+    color: white;
+}
+
+.slideImg{
+    opacity: .3;
+}
+.slideImg:hover{
+    opacity: .5;
+}
+
+
+
+
+
+
+.contentContainer{
+    position: absolute;
+    border-radius: 25px;
+    box-shadow: 10px 10px 20px;
+    right: 15px;
+    bottom: 40px;
+    color: white;
+    padding: 4px;
+    font-size: 17px;
+    line-height: 18px;
+    width: 50%;
+    background-color: darkgray;
+  }

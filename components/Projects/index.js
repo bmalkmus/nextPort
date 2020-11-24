@@ -38,12 +38,15 @@ if (!data) return <div>Loading...</div>
                     {[...data].map(project=>{
                         const key = project.name+2
                         return(
-                            <div key={key}>
-                                <p className="slideTitle">{project.name}</p>
-                                <img src={project.imgPath}/>
-                                <div>
-                                    <p>{project.description}</p>
-                                </div>
+                            <div className="slideContent" key={key}>
+                                <h2>{project.name}</h2>
+                                    <img src={project.imgPath} className="slideImg" alt="project image"/>
+                                    <div className="contentContainer">
+                                        <p>{project.description}</p>
+                                        <p>Technologies: {project.technologies}</p>
+                                        <p>Deployed: <a href={project.deployed}>{project.deployed}</a></p>
+                                        <p>Repo: <a href={project.repo}>{project.repo}</a></p>
+                                    </div>
                             </div>
                         )
                     })}
