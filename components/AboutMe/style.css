@@ -44,8 +44,12 @@
 
 /* ############## Desktop ################ */
 @media screen and (min-width: 675px) {
+
     #abtContent {
         flex-direction: row;
+    }
+    .Part-AboutMe h2{
+        font-size: 30px;
     }
     .paragraphContainer, #imgContainer{
         width: 50%;
@@ -53,14 +57,14 @@
     .imgPhone{
         display: none;
     }
-    /* .imgDesk{
+    .imgDesk{
         display: initial;
-    } */
-    /* #imgContainer{
-        /* background-color: azure; */
-    /* } */ */
+        width: 75%;
+        height: 75%;
+        box-shadow: 5px 5px 15px #07648D;
+    }
     .paragraphContainer p{
-        font-size: 25px;
+        font-size: 20px;
         padding: 10px;
     }
 

@@ -5,7 +5,6 @@ function AboutMe(){
     return (
         <div className="Part-AboutMe">
             <br/>
-            <br/>
             <h2>About Me</h2>
             <div id="abtContent">
                 <div id="imgContainer">

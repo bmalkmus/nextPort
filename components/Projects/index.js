@@ -27,8 +27,7 @@ if (!data) return <div>Loading...</div>
                         <p>Deployed: <a href={project.deployed}>{project.deployed}</a></p>
                         <p>Repo: <a href={project.repo}>{project.repo}</a></p>
                         <br/>
-                        <br/>
-                        <a href="#homePage" alt="back to top">Back to Homepage</a>
+                        <a className= "backToTop" href="#homePage" alt="back to top">Back to Homepage</a>
                         
                     </div>
                 )
