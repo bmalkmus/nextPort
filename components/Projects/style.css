@@ -6,14 +6,30 @@
     width: 100%;
 }
 
+.externalLinks, .externalLinks:visited{
+    text-decoration: none;
+    color: rgb(7,100,141)
+}
+
 .mobileCards{
     width: 100%;
-    /* height: 100vh; */
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(28,42,53);
     color: white;
+}
+
+.cardInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 5px;
+    background-color: darkgray;
+    border-radius: 25px;
+    box-shadow: 10px 10px 20px;
 }
 
 .mobileCards:nth-child(even){
@@ -40,13 +56,19 @@
 
 }
 
+@media screen and (max-width: 405px){
+    .mobileCards {
+        font-size: 12px;
+    }
+}
+
 @media screen and (min-width: 675px) {
     .mobileCards img {
         height:310px;
         width:591px;
     }
-    .mobileCards{
-        font-size: 18px;
+    .cardInfo{
+        width: 591px;
     }
 }
 

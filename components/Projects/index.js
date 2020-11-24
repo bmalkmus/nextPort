@@ -22,10 +22,12 @@ if (!data) return <div>Loading...</div>
                     <div key={keyName} className="mobileCards">
                         <h3>{project.name}</h3>
                         <img alt = "Project image" src={project.imgPath}/>
-                        <p>{project.description}</p>
-                        <p>Technologies: {project.technologies}</p>
-                        <p>Deployed: <a href={project.deployed}>{project.deployed}</a></p>
-                        <p>Repo: <a href={project.repo}>{project.repo}</a></p>
+                        <div className="cardInfo">
+                            <p>{project.description}</p>
+                            <p>Technologies: {project.technologies}</p>
+                            <p>Deployed: <a className="externalLinks" target="_blank" rel="noopener noreferrer" href={project.deployed}>{project.deployed}</a></p>
+                            <p>Repo: <a className="externalLinks" target="_blank" rel="noopener noreferrer" href={project.repo}>{project.repo}</a></p>
+                        </div>
                         <br/>
                         <a className= "backToTop" href="#homePage" alt="back to top">Back to Homepage</a>
                         
@@ -43,8 +45,8 @@ if (!data) return <div>Loading...</div>
                                     <div className="contentContainer">
                                         <p>{project.description}</p>
                                         <p>Technologies: {project.technologies}</p>
-                                        <p>Deployed: <a href={project.deployed}>{project.deployed}</a></p>
-                                        <p>Repo: <a href={project.repo}>{project.repo}</a></p>
+                                        <p>Deployed: <a className="externalLinks" target="_blank" rel="noopener noreferrer" href={project.deployed}>{project.deployed}</a></p>
+                                        <p>Repo: <a className="externalLinks" target="_blank" rel="noopener noreferrer" href={project.repo}>{project.repo}</a></p>
                                     </div>
                             </div>
                         )

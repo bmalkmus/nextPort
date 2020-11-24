@@ -1,6 +1,7 @@
 import './style.css'
 import AboutMe from "../components/AboutMe";
 import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 
 function Portfolio (){
     return (
@@ -49,6 +50,7 @@ function Portfolio (){
                 </div>
                 <AboutMe/>
                 <Projects/>
+                <Contact/>
             
         </div>
     )
