@@ -113,7 +113,7 @@
         padding-top: 0px
     }
     .landing{
-        background-image: url("/static/NavbarLandingNoSlogan.png");
+        background-image: url("/static/pexels-snapwire-336512.jpg");
         background-attachment: fixed;
         background-size: cover;
     }
@@ -143,7 +143,9 @@
 
     .sloganContainer div{
         background-color: white;
-        width:45%;
+        border-radius: 50%;
+        width:30%;
+        margin-bottom: 15px;
     }
 
     .sloganContainer p{
