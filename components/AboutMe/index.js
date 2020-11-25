@@ -9,7 +9,7 @@ function AboutMe(){
             <div id="abtContent">
                 <div id="imgContainer">
                     <img className="imgPhone" alt="thumbnail image" src="/static/ProfileThumb.png"/>
-                    <img className="imgDesk" alt="desktop image" src="/static/ProfileDesktop.png"/>
+                    <img className="imgDesk" alt="desktop image" src="/static/ProfileThumb.png"/>
                 </div>
                 <br/>
                 <br/>
