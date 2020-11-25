@@ -1,5 +1,6 @@
 import './style.css'
 import AboutMe from "../components/AboutMe";
+import Dropdown from 'react-bootstrap/Dropdown';
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 
@@ -31,11 +32,26 @@ function Portfolio (){
                                             Projects
                                         </a> 
                                     </div>
-                                    <div className = "linkContainers">
-                                        <a href="#contactMe" alt="contact me">
-                                            Contact Me
-                                        </a>
-                                    </div>      
+                                    <Dropdown className = "linkContainers">
+                                        <Dropdown.Toggle className="contactToggle">
+                                            Contact
+                                        </Dropdown.Toggle>
+
+                                        <Dropdown.Menu>
+                                            <Dropdown.Item href="https://www.github.com/bmalkmus" target="_blank" rel="noopener noreferrer">
+                                                <img className="logoLinks" src="/static/github-logo.svg"/>
+                                            </Dropdown.Item>
+                                            <Dropdown.Item href="https://www.linkedin.com/in/bmalkmus23" target="_blank" rel="noopener noreferrer">
+                                                <img className="logoLinks" src="/static/linkedin-logo.svg"/>
+                                            </Dropdown.Item>
+                                            <Dropdown.Item href="/static/BenjaminMalkmus.pdf" target="_blank" rel="noopener noreferrer">
+                                                <img className="logoLinks" src="/static/curriculum-vitae.svg"/>
+                                            </Dropdown.Item>
+                                            <Dropdown.Item>
+                                                Benjamin.Malkmus@outlook.com
+                                            </Dropdown.Item>
+                                        </Dropdown.Menu>
+                                    </Dropdown>
                         </div>
 
                         <div className="sloganContainer">
@@ -49,8 +65,8 @@ function Portfolio (){
                         </div>     
                 </div>
                 <AboutMe/>
+                <h2 id="projects">Projects</h2>
                 <Projects/>
-                <Contact/>
             
         </div>
     )
