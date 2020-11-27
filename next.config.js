@@ -3,7 +3,8 @@ module.exports = withCSS({
   trailingSlash: true,
   exportPathMap: function() {
     return {
-      '/': { page: '/' }
+      '/': { page: '/' },
+      '/api/projects':{ page: '/api/projects'}
     };
   }
   /* config options here */
