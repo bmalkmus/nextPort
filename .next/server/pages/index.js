@@ -1,0 +1,452 @@
+module.exports =
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = require('../ssr-module-cache.js');
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		var threw = true;
+/******/ 		try {
+/******/ 			modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/ 			threw = false;
+/******/ 		} finally {
+/******/ 			if(threw) delete installedModules[moduleId];
+/******/ 		}
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ 1:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("RNiq");
+
+
+/***/ }),
+
+/***/ "F5FC":
+/***/ (function(module, exports) {
+
+module.exports = require("react/jsx-runtime");
+
+/***/ }),
+
+/***/ "KaAA":
+/***/ (function(module, exports) {
+
+module.exports = require("react-responsive-carousel");
+
+/***/ }),
+
+/***/ "RNiq":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXTERNAL MODULE: external "react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__("F5FC");
+
+// EXTERNAL MODULE: ./pages/style.css
+var style = __webpack_require__("vfuC");
+
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__("cDcd");
+
+// EXTERNAL MODULE: ./components/AboutMe/style.css
+var AboutMe_style = __webpack_require__("jq0u");
+
+// CONCATENATED MODULE: ./components/AboutMe/index.js
+
+
+
+
+
+function AboutMe() {
+  return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+    className: "Part-AboutMe",
+    id: "aboutMe",
+    children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("br", {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("h2", {
+      children: "About Me"
+    }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+      id: "abtContent",
+      children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+        id: "imgContainer",
+        children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+          className: "imgPhone",
+          alt: "thumbnail image",
+          src: "/static/ProfileThumb.png"
+        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+          className: "imgDesk",
+          alt: "desktop image",
+          src: "/static/ProfileThumb.png"
+        })]
+      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("br", {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("br", {}), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+        className: "paragraphContainer",
+        children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("p", {
+          children: "My name is Benjamin Malkmus and I am a web developer. I\u2019m based out of Bellevue, WA and have lived in the surrounding Seattle area in 2016. From 2004-2019, I was in the hospitality industry. It has given me hands on experience on working with clients to make sure that my services are completed 100% to the client\u2019s expectations."
+        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("p", {
+          children: "My friends would describe me as someone who always tries to find the positives of every problem given in life. They would also describe me as someone who doesn\u2019t stress out when under pressure and still knows how to find time to have fun with every situation. When not working, you can find me outside by a body of water or watching some type of sport live or on television."
+        })]
+      })]
+    })]
+  });
+}
+
+/* harmony default export */ var components_AboutMe = (AboutMe);
+// EXTERNAL MODULE: external "react-bootstrap/Dropdown"
+var Dropdown_ = __webpack_require__("SibU");
+var Dropdown_default = /*#__PURE__*/__webpack_require__.n(Dropdown_);
+
+// EXTERNAL MODULE: ./node_modules/react-responsive-carousel/lib/styles/carousel.min.css
+var carousel_min = __webpack_require__("a6qw");
+
+// EXTERNAL MODULE: external "react-responsive-carousel"
+var external_react_responsive_carousel_ = __webpack_require__("KaAA");
+
+// EXTERNAL MODULE: ./components/Projects/style.css
+var Projects_style = __webpack_require__("RQ+W");
+
+// CONCATENATED MODULE: ./components/Projects/index.js
+
+
+ // import useSwr from 'swr';
+
+
+
+ // const fetcher = (url) => fetch(url).then((res) => res.json())
+
+function Projects({
+  projects
+}) {
+  // const { data, error } = useSwr('/api/projects', fetcher)
+  // if (error) return <div>Failed to load users</div>
+  // if (!data) return <div>Loading...</div>
+  return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+    className: "cardsContainer",
+    children: [projects.map(project => {
+      const keyName = project.name + 1;
+      return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+        className: "mobileCards",
+        children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("h3", {
+          children: project.name
+        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+          alt: "Project image",
+          src: project.imgPath
+        }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+          className: "cardInfo",
+          children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("p", {
+            children: project.description
+          }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("p", {
+            children: ["Technologies: ", project.technologies]
+          }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("p", {
+            children: ["Deployed: ", /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
+              className: "externalLinks",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              href: project.deployed,
+              children: project.deployed
+            })]
+          }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("p", {
+            children: ["Repo: ", /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
+              className: "externalLinks",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              href: project.repo,
+              children: project.repo
+            })]
+          })]
+        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("br", {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
+          className: "backToTop",
+          href: "#homePage",
+          alt: "back to top",
+          children: "Back to Homepage"
+        })]
+      }, keyName);
+    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+      className: "slideContainer",
+      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(external_react_responsive_carousel_["Carousel"], {
+        children: projects.map(project => {
+          const key = project.name + 2;
+          return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+            className: "slideContent",
+            children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("h2", {
+              children: project.name
+            }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+              src: project.imgPath,
+              className: "slideImg",
+              alt: "project image"
+            }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+              className: "contentContainer",
+              children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("p", {
+                children: project.description
+              }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("p", {
+                children: ["Technologies: ", project.technologies]
+              }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("p", {
+                children: ["Deployed: ", /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
+                  className: "externalLinks",
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                  href: project.deployed,
+                  children: project.deployed
+                })]
+              }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("p", {
+                children: ["Repo: ", /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
+                  className: "externalLinks",
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                  href: project.repo,
+                  children: project.repo
+                })]
+              })]
+            })]
+          }, key);
+        })
+      })
+    })]
+  });
+}
+
+async function getStaticProps() {
+  // Call an external API endpoint to get posts.
+  // You can use any data fetching library
+  const res = await fetch('https://23projectsapi.azurewebsites.net/api/project-Load?code=rSj96ablCzqI/N8QuBRk8ISFrtdakdR8LgrUWWviDfQYFeS/IpNz1w==');
+  const posts = await res.json(); // By returning { props: posts }, the Blog component
+  // will receive `posts` as a prop at build time
+
+  return {
+    props: {
+      projects
+    }
+  };
+}
+/* harmony default export */ var components_Projects = (Projects);
+// CONCATENATED MODULE: ./pages/index.js
+
+
+
+
+
+
+
+function Portfolio() {
+  return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+    className: "global",
+    children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("header", {
+      children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("link", {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com"
+      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("link", {
+        href: "https://fonts.googleapis.com/css2?family=Lobster&display=swap",
+        rel: "stylesheet"
+      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("title", {
+        children: "Malkmus Solutions"
+      })]
+    }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+      className: "landing",
+      id: "homePnpm age",
+      children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+        className: "logoContainer",
+        children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+          id: "brand",
+          src: "/static/MalkmusSolutionsOpacity0.png",
+          alt: "logo"
+        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
+          children: "Malkmus Solutions"
+        })]
+      }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+        className: "links",
+        children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+          className: "linkContainers",
+          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
+            href: "#aboutMe",
+            alt: "about me",
+            children: "About Me"
+          })
+        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+          className: "linkContainers",
+          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
+            href: "#projects",
+            alt: "projects",
+            children: "Projects"
+          })
+        }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])(Dropdown_default.a, {
+          className: "linkContainers",
+          children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(Dropdown_default.a.Toggle, {
+            className: "contactToggle",
+            children: "Contact"
+          }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])(Dropdown_default.a.Menu, {
+            children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(Dropdown_default.a.Item, {
+              href: "https://www.github.com/bmalkmus",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+                className: "logoLinks",
+                src: "/static/github-logo.svg"
+              })
+            }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(Dropdown_default.a.Item, {
+              href: "https://www.linkedin.com/in/bmalkmus23",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+                className: "logoLinks",
+                src: "/static/linkedin-logo.svg"
+              })
+            }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(Dropdown_default.a.Item, {
+              href: "/static/BenjaminMalkmus.pdf",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+                className: "logoLinks",
+                src: "/static/curriculum-vitae.svg"
+              })
+            }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(Dropdown_default.a.Item, {
+              children: "Benjamin.Malkmus@outlook.com"
+            })]
+          })]
+        })]
+      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+        className: "sloganContainer",
+        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+          className: "transparentContainter",
+          children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("p", {
+            children: ["A", /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
+              children: "M"
+            }), "BITIOUS.", /*#__PURE__*/Object(jsx_runtime_["jsx"])("br", {}), "ALTRUI", /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
+              children: "S"
+            }), "TIC.", /*#__PURE__*/Object(jsx_runtime_["jsx"])("br", {}), "ADAPTIVE."]
+          })
+        })
+      })]
+    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(components_AboutMe, {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("h2", {
+      id: "projects",
+      children: "Projects"
+    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(components_Projects, {})]
+  });
+}
+
+/* harmony default export */ var pages = __webpack_exports__["default"] = (Portfolio);
+
+/***/ }),
+
+/***/ "RQ+W":
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "SibU":
+/***/ (function(module, exports) {
+
+module.exports = require("react-bootstrap/Dropdown");
+
+/***/ }),
+
+/***/ "a6qw":
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "cDcd":
+/***/ (function(module, exports) {
+
+module.exports = require("react");
+
+/***/ }),
+
+/***/ "jq0u":
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "vfuC":
+/***/ (function(module, exports) {
+
+
+
+/***/ })
+
+/******/ });

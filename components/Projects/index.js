@@ -1,22 +1,22 @@
 import React from 'react';
-import useSwr from 'swr';
+// import useSwr from 'swr';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import "./style.css";
 
-const fetcher = (url) => fetch(url).then((res) => res.json())
+// const fetcher = (url) => fetch(url).then((res) => res.json())
 
-function Projects(){
+function Projects({projects}){
 
-const { data, error } = useSwr('/api/projects', fetcher)
-if (error) return <div>Failed to load users</div>
-if (!data) return <div>Loading...</div>
+// const { data, error } = useSwr('/api/projects', fetcher)
+// if (error) return <div>Failed to load users</div>
+// if (!data) return <div>Loading...</div>
 
 
 
     return (
         <div className="cardsContainer">
-            {[...data].map(project => {
+            {projects.map(project => {
                 const keyName = project.name + 1
                 return (
                     <div key={keyName} className="mobileCards">
@@ -36,7 +36,7 @@ if (!data) return <div>Loading...</div>
             })}
             <div className="slideContainer">
                 <Carousel>
-                    {[...data].map(project=>{
+                    {projects.map(project=>{
                         const key = project.name+2
                         return(
                             <div className="slideContent" key={key}>
@@ -59,6 +59,21 @@ if (!data) return <div>Loading...</div>
         </div>
     )
 }
+
+export async function getStaticProps() {
+    // Call an external API endpoint to get posts.
+    // You can use any data fetching library
+    const res = await fetch('https://23projectsapi.azurewebsites.net/api/project-Load?code=rSj96ablCzqI/N8QuBRk8ISFrtdakdR8LgrUWWviDfQYFeS/IpNz1w==')
+    const posts = await res.json()
+  
+    // By returning { props: posts }, the Blog component
+    // will receive `posts` as a prop at build time
+    return {
+      props: {
+        projects,
+      },
+    }
+  }
 
 
 export default Projects
