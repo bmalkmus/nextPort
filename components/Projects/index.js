@@ -8,6 +8,8 @@ import "./style.css";
 
 function Projects({projects}){
 
+    console.log(projects)
+
 // const { data, error } = useSwr('/api/projects', fetcher)
 // if (error) return <div>Failed to load users</div>
 // if (!data) return <div>Loading...</div>
@@ -16,7 +18,7 @@ function Projects({projects}){
 
     return (
         <div className="cardsContainer">
-            {projects.map(project => {
+            {/* {[...projects].map(project => {
                 const keyName = project.name + 1
                 return (
                     <div key={keyName} className="mobileCards">
@@ -36,7 +38,7 @@ function Projects({projects}){
             })}
             <div className="slideContainer">
                 <Carousel>
-                    {projects.map(project=>{
+                    {[...projects].map(project=>{
                         const key = project.name+2
                         return(
                             <div className="slideContent" key={key}>
@@ -52,7 +54,7 @@ function Projects({projects}){
                         )
                     })}
                 </Carousel>
-            </div>
+            </div> */}
             
 
 
@@ -64,7 +66,9 @@ export async function getStaticProps() {
     // Call an external API endpoint to get posts.
     // You can use any data fetching library
     const res = await fetch('https://23projectsapi.azurewebsites.net/api/project-Load?code=rSj96ablCzqI/N8QuBRk8ISFrtdakdR8LgrUWWviDfQYFeS/IpNz1w==')
-    const posts = await res.json()
+    const projects = await res.json()
+
+    console.log(projects)
   
     // By returning { props: posts }, the Blog component
     // will receive `posts` as a prop at build time
