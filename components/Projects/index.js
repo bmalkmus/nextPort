@@ -6,9 +6,9 @@ import "./style.css";
 
 // const fetcher = (url) => fetch(url).then((res) => res.json())
 
-function Projects({projects}){
+function Projects({data}){
+    console.log(data);
 
-    console.log(projects)
 
 // const { data, error } = useSwr('/api/projects', fetcher)
 // if (error) return <div>Failed to load users</div>
@@ -62,21 +62,10 @@ function Projects({projects}){
     )
 }
 
-export async function getStaticProps() {
-    // Call an external API endpoint to get posts.
-    // You can use any data fetching library
+Projects.getInitialProps = async (ctx) => {
     const res = await fetch('https://23projectsapi.azurewebsites.net/api/project-Load?code=rSj96ablCzqI/N8QuBRk8ISFrtdakdR8LgrUWWviDfQYFeS/IpNz1w==')
-    const projects = await res.json()
-
-    console.log(projects)
-  
-    // By returning { props: posts }, the Blog component
-    // will receive `posts` as a prop at build time
-    return {
-      props: {
-        projects,
-      },
-    }
+    const json = await res.json()
+    return { data:json }
   }
 
 
