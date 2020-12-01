@@ -6,8 +6,7 @@ import "./style.css";
 
 // const fetcher = (url) => fetch(url).then((res) => res.json())
 
-function Projects({data}){
-    console.log(data);
+function Projects(){
 
 
 // const { data, error } = useSwr('/api/projects', fetcher)
@@ -62,11 +61,7 @@ function Projects({data}){
     )
 }
 
-Projects.getInitialProps = async (ctx) => {
-    const res = await fetch('https://23projectsapi.azurewebsites.net/api/project-Load?code=rSj96ablCzqI/N8QuBRk8ISFrtdakdR8LgrUWWviDfQYFeS/IpNz1w==')
-    const json = await res.json()
-    return { data:json }
-  }
+
 
 
 export default Projects
