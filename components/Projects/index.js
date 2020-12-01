@@ -6,7 +6,7 @@ import "./style.css";
 
 // const fetcher = (url) => fetch(url).then((res) => res.json())
 
-function Projects(){
+function Projects({projects}){
 
 
 // const { data, error } = useSwr('/api/projects', fetcher)
@@ -17,7 +17,7 @@ function Projects(){
 
     return (
         <div className="cardsContainer">
-            {/* {[...projects].map(project => {
+            {[...projects].map(project => {
                 const keyName = project.name + 1
                 return (
                     <div key={keyName} className="mobileCards">
@@ -53,7 +53,7 @@ function Projects(){
                         )
                     })}
                 </Carousel>
-            </div> */}
+            </div>
             
 
 

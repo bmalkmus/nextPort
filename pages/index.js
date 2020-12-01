@@ -4,7 +4,6 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import Projects from "../components/Projects";
 
 function Portfolio ({data}){
-    console.log(data)
     return (
         <div className = "global">
             <header>
@@ -66,14 +65,14 @@ function Portfolio ({data}){
                 </div>
                 <AboutMe/>
                 <h2 id="projects">Projects</h2>
-                <Projects/>
+                <Projects projects = {data}/>
             
         </div>
     )
 }
 
 Portfolio.getInitialProps = async (ctx) => {
-    const res = await fetch('https://23projectsapi.azurewebsites.net/api/project-Load?code=rSj96ablCzqI/N8QuBRk8ISFrtdakdR8LgrUWWviDfQYFeS/IpNz1w==')
+    const res = await fetch('https://23projectsapi.azurewebsites.net/api/project-Load?code=rSj96ablCzqI/N8QuBRk8ISFrtdakdR8LgrUWWviDfQYFeS/IpNz1w==');
     const json = await res.json()
     return { data:json }
   }
