@@ -157,7 +157,7 @@ function AboutMe() {
         }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
           className: "imgDesk",
           alt: "desktop image",
-          src: "/static/ProfileThumb.png"
+          src: "/static/mainProfile.png"
         })]
       }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("br", {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("br", {}), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
         className: "paragraphContainer",
@@ -188,18 +188,14 @@ var Projects_style = __webpack_require__("RQ+W");
 // CONCATENATED MODULE: ./components/Projects/index.js
 
 
- // import useSwr from 'swr';
 
 
 
- // const fetcher = (url) => fetch(url).then((res) => res.json())
+
 
 function Projects({
   projects
 }) {
-  // const { data, error } = useSwr('/api/projects', fetcher)
-  // if (error) return <div>Failed to load users</div>
-  // if (!data) return <div>Loading...</div>
   return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
     className: "cardsContainer",
     children: [[...projects].map(project => {
