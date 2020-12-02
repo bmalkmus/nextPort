@@ -72,7 +72,7 @@ function Portfolio ({data}){
 }
 
 Portfolio.getInitialProps = async (ctx) => {
-    const res = await fetch('https://23projectsapi.azurewebsites.net/api/project-Load?code=' + process.env.projectKey);
+    const res = await fetch(`https://${process.env.PROJECT_KEY}`);
     const json = await res.json()
     return { data:json }
   }
