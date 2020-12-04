@@ -1,19 +1,19 @@
 import React from 'react';
-import "./style.css";
+import styles from "./AboutMe.module.css";
 
 function AboutMe(){
     return (
-        <div className="Part-AboutMe" id="aboutMe">
+        <div className={styles.partAboutMe} id="aboutMe">
             <br/>
             <h2>About Me</h2>
-            <div id="abtContent">
-                <div id="imgContainer">
-                    <img className="imgPhone" alt="thumbnail image" src="/static/ProfileThumb.png"/>
-                    <img className="imgDesk" alt="desktop image" src="/static/mainProfile.png"/>
+            <div id="abtContent" className={styles.abtContent}>
+                <div id="imgContainer" className={styles.imgContainer}>
+                    <img className={styles.imgPhone} alt="thumbnail image" src="/static/ProfileThumb.png"/>
+                    <img className={styles.imgDesk} alt="desktop image" src="/static/mainProfile.png"/>
                 </div>
                 <br/>
                 <br/>
-                <div className="paragraphContainer">
+                <div className={styles.paragraphContainer}>
                     <p>
                         My name is Benjamin Malkmus and I am a web developer. 
                         I’m based out of Bellevue, WA and have lived in the surrounding Seattle area in 2016. 
