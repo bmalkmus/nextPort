@@ -259,7 +259,7 @@ function Projects({
         })]
       }, keyName);
     }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-      className: "slideContainer",
+      className: Projects_module_default.a.slideContainer,
       children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(external_react_responsive_carousel_["Carousel"], {
         children: [...projects].map(project => {
           const key = project.name + 2;
@@ -451,7 +451,6 @@ module.exports = {
 	"slideContainer": "Projects_slideContainer__2YWGT",
 	"slideTitle": "Projects_slideTitle__1_o7n",
 	"descriptionContainer": "Projects_descriptionContainer__2OG90",
-	"thumbs": "Projects_thumbs__3Z2PI",
 	"slideContent": "Projects_slideContent__3y-c6",
 	"slideImg": "Projects_slideImg__13mIz",
 	"contentContainer": "Projects_contentContainer__3dnWx"

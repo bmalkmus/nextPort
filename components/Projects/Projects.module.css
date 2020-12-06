@@ -86,7 +86,7 @@
     color: white;
 }
 
-.thumbs{
+.slideContainer ul:nth-child(2){
     display: flex;
     flex-direction: row;
     align-items: center;

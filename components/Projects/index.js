@@ -26,7 +26,7 @@ function Projects({projects}){
                     </div>
                 )
             })}
-            <div className="slideContainer">
+            <div className={styles.slideContainer}>
                 <Carousel>
                     {[...projects].map(project=>{
                         const key = project.name+2
