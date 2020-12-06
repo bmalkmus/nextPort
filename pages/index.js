@@ -1,4 +1,4 @@
-import styles from './Portfolio.module.css';
+import styles from '../CSS-page/Portfolio.module.css';
 import AboutMe from "../components/AboutMe";
 import Dropdown from 'react-bootstrap/Dropdown';
 import Projects from "../components/Projects";

@@ -88,12 +88,12 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 1:
+/***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("RNiq");
@@ -144,8 +144,8 @@ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return
 // EXTERNAL MODULE: external "react/jsx-runtime"
 var jsx_runtime_ = __webpack_require__("F5FC");
 
-// EXTERNAL MODULE: ./pages/Portfolio.module.css
-var Portfolio_module = __webpack_require__("iJFx");
+// EXTERNAL MODULE: ./CSS-page/Portfolio.module.css
+var Portfolio_module = __webpack_require__("xX0t");
 var Portfolio_module_default = /*#__PURE__*/__webpack_require__.n(Portfolio_module);
 
 // EXTERNAL MODULE: external "react"
@@ -470,21 +470,21 @@ module.exports = require("react");
 
 /***/ }),
 
-/***/ "iJFx":
+/***/ "xX0t":
 /***/ (function(module, exports) {
 
 // Exports
 module.exports = {
-	"landing": "Portfolio_landing__3Thh5",
-	"logoContainer": "Portfolio_logoContainer__rL4Nt",
-	"brand": "Portfolio_brand__G4QKQ",
-	"links": "Portfolio_links__10FDx",
-	"linkContainers": "Portfolio_linkContainers__2DXpB",
-	"contactToggle": "Portfolio_contactToggle__V5ezl",
-	"dropdownMenu": "Portfolio_dropdownMenu__3ZO_1",
-	"logoLinks": "Portfolio_logoLinks__HqxZB",
-	"sloganContainer": "Portfolio_sloganContainer__1cOGM",
-	"projects": "Portfolio_projects__DOsKh"
+	"landing": "Portfolio_landing__3WLtx",
+	"logoContainer": "Portfolio_logoContainer__1sx6V",
+	"brand": "Portfolio_brand__6fpSv",
+	"links": "Portfolio_links__37V1T",
+	"linkContainers": "Portfolio_linkContainers__2YdrM",
+	"contactToggle": "Portfolio_contactToggle__1FXdD",
+	"dropdownMenu": "Portfolio_dropdownMenu__axuw6",
+	"logoLinks": "Portfolio_logoLinks__zr134",
+	"sloganContainer": "Portfolio_sloganContainer__1YSbF",
+	"projects": "Portfolio_projects__2Tvfb"
 };
 
 

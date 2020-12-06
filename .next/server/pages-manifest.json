@@ -1,5 +1,4 @@
 {
-  "/api/projects": "pages/api/projects.js",
   "/": "pages/index.js",
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
