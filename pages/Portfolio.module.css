@@ -22,7 +22,7 @@
     display: none;
 }
 
-#brand {
+.brand {
     height: 65%;
     width: 55%;
     padding-top: 20px;

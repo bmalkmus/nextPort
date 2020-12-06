@@ -16,7 +16,7 @@ function Portfolio ({data}){
                 <div className={styles.landing} id="homePage">
 
                         <div className={styles.logoContainer}>
-                            <img id = "brand" src ="/static/MalkmusSolutionsOpacity0.png" alt="logo"/>
+                            <img className = {styles.brand} src ="/static/MalkmusSolutionsOpacity0.png" alt="logo"/>
                             <span>Malkmus Solutions</span>   
                         </div>
 
