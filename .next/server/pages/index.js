@@ -416,7 +416,7 @@ function Portfolio({
 }
 
 async function getStaticProps(context) {
-  const res = await fetch(`https://${process.env.PROJECT_KEY}`);
+  const res = await fetch(`https://23projectsapi.azurewebsites.net/api/project-Load`);
   const data = await res.json();
   return {
     props: {
