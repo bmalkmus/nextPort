@@ -71,10 +71,10 @@ function Portfolio ({data}){
     )
 }
 
-Portfolio.getInitialProps = async (ctx) => {
+export async function getStaticProps(context) {
     const res = await fetch(`https://${process.env.PROJECT_KEY}`);
-    const json = await res.json()
-    return { data:json }
+    const data = await res.json()
+    return { props: {data,}, }
   }
 
 export default Portfolio

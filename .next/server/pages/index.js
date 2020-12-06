@@ -138,6 +138,9 @@ module.exports = require("react-responsive-carousel");
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return /* binding */ getStaticProps; });
+
 // EXTERNAL MODULE: external "react/jsx-runtime"
 var jsx_runtime_ = __webpack_require__("F5FC");
 
@@ -412,14 +415,15 @@ function Portfolio({
   });
 }
 
-Portfolio.getInitialProps = async ctx => {
+async function getStaticProps(context) {
   const res = await fetch(`https://${process.env.PROJECT_KEY}`);
-  const json = await res.json();
+  const data = await res.json();
   return {
-    data: json
+    props: {
+      data
+    }
   };
-};
-
+}
 /* harmony default export */ var pages = __webpack_exports__["default"] = (Portfolio);
 
 /***/ }),
