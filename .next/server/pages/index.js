@@ -332,7 +332,7 @@ function Portfolio({
       children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
         className: Portfolio_module_default.a.logoContainer,
         children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
-          id: "brand",
+          className: Portfolio_module_default.a.brand,
           src: "/static/MalkmusSolutionsOpacity0.png",
           alt: "logo"
         }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
